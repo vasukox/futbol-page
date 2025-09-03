@@ -1,7 +1,8 @@
 const BASE_URL = 'https://api.football-data.org/v4';
 
 const getHeaders = () => ({
-  'X-Auth-Token': process.env.REACT_APP_FOOTBALL_KEY
+  'X-Auth-Token': process.env.REACT_APP_FOOTBALL_KEY,
+  'Origin': 'https://futbol-page.vercel.app'
 });
 
 export const footballAPI = {
